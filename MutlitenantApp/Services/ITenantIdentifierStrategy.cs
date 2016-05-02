@@ -2,7 +2,7 @@
 
 namespace MutlitenantApp.Services
 {
-    interface ITenantIdentifierStrategy
+    public interface ITenantIdentifierStrategy
     {
         string GetCurrentTenant(RequestContext context);
     }

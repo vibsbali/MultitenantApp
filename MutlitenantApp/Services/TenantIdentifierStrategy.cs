@@ -6,7 +6,12 @@ namespace MutlitenantApp.Services
     {
         public string GetCurrentTenant(RequestContext context)
         {
-            if (context.HttpContext.Request.Url != null) return context.HttpContext.Request.Url.Host.ToLower();
+            if (context.HttpContext.Request.Url != null)
+            {
+                return context.HttpContext.Request.Url.Host.ToLower();
+            }
+
+            return null;
         }
     }
 }
